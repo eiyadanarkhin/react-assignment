@@ -9,18 +9,15 @@ export default function DataFetch() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // ၁။ Flag တစ်ခု သတ်မှတ်ပါ
     let isIgnore = false;
 
     const fetchData = async () => {
       try {
-        setLoading(true); // Fetch မလုပ်ခင် loading ပြမယ်
+        setLoading(true);
         const response = await fetch(API_URL);
         if (!response.ok) throw new Error("Failed to fetch data");
 
         const result = await response.json();
-
-        // ၂။ Component က unmount ဖြစ်သွားပြီဆိုရင် state update မလုပ်တော့ဘူး
         if (!isIgnore) {
           setDatas(result);
         }
@@ -36,15 +33,10 @@ export default function DataFetch() {
     };
 
     fetchData();
-
-    // ၃။ Cleanup Function: Component ပိတ်သွားရင် isIgnore ကို true ပေးလိုက်မယ်
     return () => {
       isIgnore = true;
     };
-  }, []); // Empty dependency array ကြောင့် mount တစ်ခါဖြစ်ရင် တစ်ခါပဲ run မယ်
+  }, []);
 
-  return (
-    
-    <PhotoGallery datas={datas} loading={loading} error={error} />
-  );
+  return <PhotoGallery datas={datas} loading={loading} error={error} />;
 }
