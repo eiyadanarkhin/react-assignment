@@ -1,13 +1,7 @@
-import React, { useEffect, useState } from "react";
-import PhotoGallery from "../components/PhotoGallery";
+import React, { useEffect } from "react";
+const API_URL = "https://6996c1207d17864365752ee4.mockapi.io/api/v1/pets";
 
-export default function DataFetch() {
-  const API_URL = "https://6996c1207d17864365752ee4.mockapi.io/api/v1/pets";
-
-  const [datas, setDatas] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
+export default function Api({ setDatas, setLoading, setError }) {
   useEffect(() => {
     let isIgnore = false;
 
@@ -36,7 +30,7 @@ export default function DataFetch() {
     return () => {
       isIgnore = true;
     };
-  }, []);
+  }, [setDatas, setLoading, setError]);
 
-  return <PhotoGallery datas={datas} loading={loading} error={error} />;
+  return null;
 }
