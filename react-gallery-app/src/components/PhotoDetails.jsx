@@ -216,7 +216,7 @@ export default function PhotoDetails({ datas }) {
 
               <button
                 onClick={() =>
-                  window.open("https://m.me/monito_page", "_blank")
+                  window.open("https://chatbox.ae/contact/", "_blank")
                 }
                 className="flex justify-center items-center gap-2 leading-tight border-2 border-[#002A48]  text-[#002A48] px-3 lg:px-7 py-3 rounded-[57px]  cursor-pointer"
               >
