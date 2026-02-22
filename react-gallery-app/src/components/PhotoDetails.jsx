@@ -63,7 +63,7 @@ export default function PhotoDetails({ datas }) {
                     fill="#3F5C6C"
                   />
                 </svg>
-                <span className="text-[#002A48] text-sm font-semibold">
+                <span className="text-[#002A48] text-sm font-bold">
                   100% health guarantee for pets
                 </span>
               </div>
@@ -183,7 +183,7 @@ export default function PhotoDetails({ datas }) {
                     </clipPath>
                   </defs>
                 </svg>
-                <span className="text-[#002A48] text-sm font-semibold">
+                <span className="text-[#002A48] text-sm font-bold">
                   100% guarantee of pet identification
                 </span>
               </div>

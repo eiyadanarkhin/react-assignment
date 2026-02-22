@@ -2,9 +2,28 @@
 
 @font-face {
   font-family: Svn-Gilory;
-  src: url("./assets/fonts/svn-gilroy/SVN-Gilroy-Medium.otf");
+  src: url("./assets/fonts/svn-gilroy/SVN-Gilroy-Light.otf") format("opentype") ;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme{
-  --font-svn-gilory: Svn-Gilory, "Sans-serif";
+@font-face {
+  font-family: Svn-Gilory;
+  src: url("./assets/fonts/svn-gilroy/SVN-Gilroy-Medium.otf") format("opentype") ;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Svn-Gilory;
+  src: url("./assets/fonts/svn-gilroy/SVN-Gilroy-XBold.otf") format("opentype") ;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-svn-gilory: Svn-Gilory, sans-serif;
 }
