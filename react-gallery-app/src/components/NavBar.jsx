@@ -1,6 +1,6 @@
 export default function NavBar({ viewMore, setViewMore }) {
   return (
-    <div className="bg-gray-50 ">
+    <div className="font-svn-gilory bg-gray-50 ">
       <div className="max-w-7xl mx-auto py-10 px-3 xl:px-0 flex flex-col md:flex-row items-end  md:justify-between md:items-end">
         <div>
           <p className="font-medium text-[#000000] text-[16px] leading-6">Whats new?</p>

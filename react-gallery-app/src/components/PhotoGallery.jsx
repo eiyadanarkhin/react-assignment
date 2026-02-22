@@ -15,7 +15,7 @@ export default function PhotoGallery({ datas, loading, error, limit }) {
   };
 
   return (
-    <section className="bg-gray-50 pb-10 ">
+    <section className="font-svn-gilory bg-gray-50 pb-10 ">
       <div className="max-w-7xl mx-auto px-3 xl:px-0">
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

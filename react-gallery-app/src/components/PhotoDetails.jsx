@@ -25,7 +25,7 @@ export default function PhotoDetails({ datas }) {
   };
 
   return (
-    <section className="bg-gray-50 py-10">
+    <section className="font-svn-gilory bg-gray-50 py-10">
       <div className="max-w-7xl mx-auto px-3 xl:px-0">
         <div className="flex flex-col md:flex-row bg-[#FDFDFD] rounded-[20px] border border-[#EBEEEF] px-2 md:px-5 py-5.5 gap-8.5">
           <div className="w-full md:w-1/2">

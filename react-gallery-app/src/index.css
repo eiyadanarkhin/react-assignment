@@ -1,1 +1,10 @@
+@font-face {
+  font-family: Svn-Gilory;
+  src: url("./assets/fonts/svn-gilroy/SVN-Gilroy-Medium.otf");
+}
+
 @import "tailwindcss";
+
+@theme{
+  --font-svn-gilory: Svn-Gilory, "Sans-serif";
+}
